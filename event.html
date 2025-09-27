@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>交流展演</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="lion.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
+<style>
+    body { background-color: #fff8f0; }
+    .event-card { position: relative; overflow: hidden; border-radius: 10px; box-shadow: 0 3px 10px rgba(0,0,0,0.1); margin-bottom: 1.5rem; }
+    .event-date { position: absolute; top: 10px; left: 10px; background-color: #ff7f50; color: #fff; padding: 5px 10px; border-radius: 5px; font-weight: bold; z-index: 2; }
+    .event-content { padding: 15px; }
+    .event-title { font-size: 1.25rem; font-weight: 700; margin-bottom: 5px; }
+    .event-location { font-size: 0.9rem; color: #555; margin-bottom: 10px; }
+    .carousel-item img { object-fit: cover; height: 200px; }
+</style>
+</head>
+<body style="background-color: #ebd4b0">
+<nav class="navbar navbar-light fixed-top navbar-expand-lg rounded-pill container mt-3" style="background-color: #C1DFF0;">
+    <div class="container-fluid">
+        <a class="navbar-brand  fw-bold" href="index.html">
+            <img src="lion.png" alt="" width="30" height="24" class="d-inline-block align-text-top">
+            台灣獅頭旺民俗技藝發展協會
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">台灣獅頭旺民俗技藝發展協會</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+
+            <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">最新消息</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    相關協會
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                        <li><a class="dropdown-item" href="https://grouptw.moi.gov.tw/SearchGroup?size=10&page=1&IsQuery=true&tab=little&Q_Name=%E4%B8%AD%E8%8F%AF%E5%8F%B0%E5%8C%97%E4%BA%94%E7%A5%96%E6%8B%B3%E5%8D%94%E6%9C%83&Q_Type=%E7%A4%BE%E6%9C%83%E5%9C%98%E9%AB%94" target="_blank">中華台北五祖拳協會</a></li>
+                        <li><a class="dropdown-item" href="https://grouptw.moi.gov.tw/SearchGroup?size=10&page=1&IsQuery=true&tab=little&Q_Name=%E4%B8%AD%E8%8F%AF%E9%9D%92%E5%B9%B4%E6%8A%80%E8%97%9D%E4%BF%83%E9%80%B2%E6%9C%83&Q_Type=%E7%A4%BE%E6%9C%83%E5%9C%98%E9%AB%94" target="_blank">中華青年技藝促進會</a></li>
+                        <li><a class="dropdown-item" href="https://map.dosw.gov.taipei/taipeiWelfare_map/all_new/corporation_map.aspx#">台北市客家獅技藝協會</a></li>
+                        <li><a class="dropdown-item" href="https://btsp.tw/" target="_blank">台北市北投區體育會國術委員會</a></li>
+                        <li><a class="dropdown-item" href="https://btsp.tw/" target="_blank">台北市北投區體育會龍獅武術運動委員會</a></li>
+                        <li><a class="dropdown-item" href="https://eculture.gov.taipei/groups/zh-tw/groupdata/186" target="_blank">獅頭旺劇團</a></li>
+                    <!-- <li><hr class="dropdown-divider"></li> -->
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="event.html">交流展演</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contest.html">比賽經歷</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">關於獅頭旺</a>
+                </li>
+                </ul>
+                <!-- <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+                </form> -->
+            </div>
+
+        </div>
+
+    </div>
+</nav>
+
+<div class="container my-5">
+    <h2 class="text-center mb-5">演出與交流活動</h2>
+
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+        <!-- 活動卡片1 -->
+        <div class="col">
+            <div class="event-card">
+                <!-- 照片輪播 -->
+                <div id="carousel1" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="event/北投1.jpg" class="d-block w-100" alt="活動照1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="event/北投2.jpg" class="d-block w-100" alt="活動照2">
+                        </div>
+                        <!-- <div class="carousel-item">
+                            <img src="photo3.jpg" class="d-block w-100" alt="活動照3">
+                        </div> -->
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carousel1" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carousel1" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                </div>
+                <div class="event-date">2025/08/30</div>
+                <div class="event-content">
+                    <div class="event-title">第九屆傳統武術培訓營</div>
+                    <div class="event-location">地點：唭哩岸區民活動中心</div>
+                    <p>第九屆傳統武術培訓營成果展。</p>
+                    <a href="https://www.facebook.com/share/p/1CXmycjk4p/" target="_blank" class="btn btn-primary btn-sm">Facebook</a>
+                    <a href="https://www.instagram.com/hungwending66" target="_blank" class="btn btn-danger btn-sm">Instagram</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 活動卡片2 -->
+        <div class="col">
+            <div class="event-card">
+                <div id="carousel2" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="stage1.jpg" class="d-block w-100" alt="舞台照1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="stage2.jpg" class="d-block w-100" alt="舞台照2">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carousel2" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carousel2" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                </div>
+                <div class="event-date">2025/07</div>
+                <div class="event-content">
+                    <div class="event-title">臺灣獅頭旺漳州交流活動</div>
+                    <div class="event-location">地點：臺灣獅頭旺文化館漳州展示館</div>
+                    <p>臺灣獅頭旺文化館漳州展示館和四果湯。</p>
+                    <a href="https://www.facebook.com/share/p/18dZtzA6yF/" class="btn btn-primary btn-sm">Facebook</a>
+                    <a href="https://www.instagram.com/hungwending66" class="btn btn-danger btn-sm">Instagram</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 活動卡片3 -->
+        <div class="col">
+            <div class="event-card">
+                <div id="carousel2" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="stage1.jpg" class="d-block w-100" alt="舞台照1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="stage2.jpg" class="d-block w-100" alt="舞台照2">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carousel2" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carousel2" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                </div>
+                <div class="event-date">2025/07</div>
+                <div class="event-content">
+                    <div class="event-title">測試</div>
+                    <div class="event-location">地點：測試</div>
+                    <p>測試測試測試測試測試。</p>
+                    <a href="https://www.facebook.com/" class="btn btn-primary btn-sm">Facebook</a>
+                    <a href="https://www.instagram.com/hungwending66" class="btn btn-danger btn-sm">Instagram</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p class="mb-0">© 2025 台灣獅頭旺民俗技藝發展協會 | 保留所有權利</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>比賽經歷</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="lion.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
+<style>
+    body { background-color: #fdfcf8; }
+    .award-card {
+        border: none;
+        border-radius: 12px;
+        padding: 20px;
+        background: linear-gradient(135deg, #fff, #f9f6f1);
+        box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .award-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+    .award-year {
+        font-size: 1.1rem;
+        font-weight: 700;
+        color: #ff7f50;
+        margin-bottom: 0.5rem;
+    }
+    .award-title {
+        font-size: 1.3rem;
+        font-weight: 700;
+        margin-bottom: 0.3rem;
+    }
+    .award-desc {
+        font-size: 1rem;
+        color: #555;
+    }
+</style>
+</head>
+<body style="background-color: #ebd4b0">
+<nav class="navbar navbar-light fixed-top navbar-expand-lg rounded-pill container mt-3" style="background-color: #C1DFF0;">
+    <div class="container-fluid">
+        <a class="navbar-brand  fw-bold" href="index.html">
+            <img src="lion.png" alt="" width="30" height="24" class="d-inline-block align-text-top">
+            台灣獅頭旺民俗技藝發展協會
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">台灣獅頭旺民俗技藝發展協會</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+
+            <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">最新消息</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    相關協會
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                        <li><a class="dropdown-item" href="https://grouptw.moi.gov.tw/SearchGroup?size=10&page=1&IsQuery=true&tab=little&Q_Name=%E4%B8%AD%E8%8F%AF%E5%8F%B0%E5%8C%97%E4%BA%94%E7%A5%96%E6%8B%B3%E5%8D%94%E6%9C%83&Q_Type=%E7%A4%BE%E6%9C%83%E5%9C%98%E9%AB%94" target="_blank">中華台北五祖拳協會</a></li>
+                        <li><a class="dropdown-item" href="https://grouptw.moi.gov.tw/SearchGroup?size=10&page=1&IsQuery=true&tab=little&Q_Name=%E4%B8%AD%E8%8F%AF%E9%9D%92%E5%B9%B4%E6%8A%80%E8%97%9D%E4%BF%83%E9%80%B2%E6%9C%83&Q_Type=%E7%A4%BE%E6%9C%83%E5%9C%98%E9%AB%94" target="_blank">中華青年技藝促進會</a></li>
+                        <li><a class="dropdown-item" href="https://map.dosw.gov.taipei/taipeiWelfare_map/all_new/corporation_map.aspx#">台北市客家獅技藝協會</a></li>
+                        <li><a class="dropdown-item" href="https://btsp.tw/" target="_blank">台北市北投區體育會國術委員會</a></li>
+                        <li><a class="dropdown-item" href="https://btsp.tw/" target="_blank">台北市北投區體育會龍獅武術運動委員會</a></li>
+                        <li><a class="dropdown-item" href="https://eculture.gov.taipei/groups/zh-tw/groupdata/186" target="_blank">獅頭旺劇團</a></li>
+                    <!-- <li><hr class="dropdown-divider"></li> -->
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="event.html">交流展演</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contest.html">比賽經歷</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">關於獅頭旺</a>
+                </li>
+                </ul>
+                <!-- <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+                </form> -->
+            </div>
+
+        </div>
+
+    </div>
+</nav>
+
+<div class="container my-5">
+    <h2 class="text-center mb-5">得獎紀錄</h2>
+
+        <!-- 獎項1 -->
+        <div class="col" style="padding-bottom: 10px;">
+            <div class="award-card h-100">
+                <div class="award-year">2025</div>
+                <div class="award-title">全國某某運動會 - 冠軍</div>
+                <div class="award-desc">榮獲全國某某運動會，展現出精湛的技藝與團隊合作精神。</div>
+            </div>
+        </div>
+
+        <!-- 獎項2 -->
+        <div class="col" style="padding-bottom: 10px;">
+            <div class="award-card h-100">
+                <div class="award-year">2024</div>
+                <div class="award-title">亞洲某某表演競賽 - 優勝</div>
+                <div class="award-desc">於馬來西亞舉辦的某某競賽中，與多國團隊交流並榮獲優勝。</div>
+            </div>
+        </div>
+
+        <!-- 獎項3 -->
+        <div class="col" style="padding-bottom: 10px;">
+            <div class="award-card h-100">
+                <div class="award-year">2023</div>
+                <div class="award-title">某某盃錦標賽 - 亞軍</div>
+                <div class="award-desc">參與某某盃錦標賽，展現新世代的創意與活力，奪得亞軍。</div>
+            </div>
+        </div>
+
+        <!-- 獎項4 -->
+        <div class="col" style="padding-bottom: 10px;">
+            <div class="award-card h-100">
+                <div class="award-year">2022</div>
+                <div class="award-title">全國某某運動會 - 冠軍</div>
+                <div class="award-desc">榮獲全國某某運動會，展現出精湛的技藝與團隊合作精神。</div>
+            </div>
+        </div>
+
+        <!-- 獎項5 -->
+        <div class="col" style="padding-bottom: 10px;">
+            <div class="award-card h-100">
+                <div class="award-year">2021</div>
+                <div class="award-title">亞洲某某表演競賽 - 優勝</div>
+                <div class="award-desc">於馬來西亞舉辦的某某競賽中，與多國團隊交流並榮獲優勝。</div>
+            </div>
+        </div>
+
+        <!-- 獎項6 -->
+        <div class="col" style="padding-bottom: 10px;">
+            <div class="award-card h-100">
+                <div class="award-year">2020</div>
+                <div class="award-title">某某盃錦標賽 - 亞軍</div>
+                <div class="award-desc">參與某某盃錦標賽，展現新世代的創意與活力，奪得亞軍。</div>
+            </div>
+        </div>
+
+</div>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p class="mb-0">© 2025 台灣獅頭旺民俗技藝發展協會 | 保留所有權利</p>
+    </footer>
+
+</body>
+</html>
