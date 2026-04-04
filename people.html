@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>比賽經歷</title>
+    <title>人物介紹</title>
 
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -14,36 +14,7 @@
 
     <link rel="stylesheet" href="lion.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
-<style>
-    body { background-color: #fdfcf8; }
-    .award-card {
-        border: none;
-        border-radius: 12px;
-        padding: 20px;
-        background: linear-gradient(135deg, #fff, #f9f6f1);
-        box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-        transition: transform 0.2s ease, box-shadow 0.2s ease;
-    }
-    .award-card:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-    }
-    .award-year {
-        font-size: 1.1rem;
-        font-weight: 700;
-        color: #ff7f50;
-        margin-bottom: 0.5rem;
-    }
-    .award-title {
-        font-size: 1.3rem;
-        font-weight: 700;
-        margin-bottom: 0.3rem;
-    }
-    .award-desc {
-        font-size: 1rem;
-        color: #555;
-    }
-</style>
+
 </head>
 <body style="background-color: #ebd4b0">
 <nav class="navbar navbar-light fixed-top navbar-expand-lg rounded-pill container mt-3" style="background-color: #C1DFF0;">
@@ -109,65 +80,44 @@
     </div>
 </nav>
 
-<div class="container my-5">
-    <h2 class="text-center mb-5">得獎紀錄</h2>
+<!-- 圓形區塊 -->
+<div class="container py-5">
+    <div class="row justify-content-center g-4">
 
-        <!-- 獎項1 -->
-        <div class="col" style="padding-bottom: 10px;">
-            <div class="award-card h-100">
-                <div class="award-year">2025</div>
-                <div class="award-title">全國某某運動會 - 冠軍</div>
-                <div class="award-desc">榮獲全國某某運動會，展現出精湛的技藝與團隊合作精神。</div>
+<!-- 國寶藝師 -->
+        <div class="col-12 col-md-6 d-flex justify-content-center">
+            <a href="master.html" class="text-decoration-none">
+            <div class="feature-card rounded-circle d-flex flex-column align-items-center justify-content-center shadow"
+                style="width:320px; height:320px; background:white;">
+<!-- <div class="rounded-circle overflow-hidden mb-3"
+style="width:140px; height:140px; border:4px solid #eee;">
+<img src="https://picsum.photos/seed/master/300" class="w-100 h-100 object-fit-cover" alt="國寶藝師">
+</div> -->
+                <h1 class="fw-bold text-danger">國寶藝師</h1>
+<!-- <a href="#" class="btn btn-outline-danger btn-sm mt-2">查看更多</a> -->
             </div>
+            </a>
         </div>
 
-        <!-- 獎項2 -->
-        <div class="col" style="padding-bottom: 10px;">
-            <div class="award-card h-100">
-                <div class="award-year">2024</div>
-                <div class="award-title">亞洲某某表演競賽 - 優勝</div>
-                <div class="award-desc">於馬來西亞舉辦的某某競賽中，與多國團隊交流並榮獲優勝。</div>
+<!-- 師資陣容 -->
+        <div class="col-12 col-md-6 d-flex justify-content-center">
+            <a href="teacher.html" class="text-decoration-none">
+            <div class="feature-card rounded-circle d-flex flex-column align-items-center justify-content-center shadow"
+                style="width:320px; height:320px; background:white;">
+<!-- <div class="rounded-circle overflow-hidden mb-3"
+style="width:140px; height:140px; border:4px solid #eee;">
+<img src="https://picsum.photos/seed/team/300" class="w-100 h-100 object-fit-cover" alt="師資陣容">
+</div> -->
+                <h1 class="fw-bold text-primary">師資陣容</h1>
+<!-- <a href="#" class="btn btn-outline-primary btn-sm mt-2">查看師資</a> -->
             </div>
+            </a>
         </div>
 
-        <!-- 獎項3 -->
-        <div class="col" style="padding-bottom: 10px;">
-            <div class="award-card h-100">
-                <div class="award-year">2023</div>
-                <div class="award-title">某某盃錦標賽 - 亞軍</div>
-                <div class="award-desc">參與某某盃錦標賽，展現新世代的創意與活力，奪得亞軍。</div>
-            </div>
-        </div>
-
-        <!-- 獎項4 -->
-        <div class="col" style="padding-bottom: 10px;">
-            <div class="award-card h-100">
-                <div class="award-year">2022</div>
-                <div class="award-title">全國某某運動會 - 冠軍</div>
-                <div class="award-desc">榮獲全國某某運動會，展現出精湛的技藝與團隊合作精神。</div>
-            </div>
-        </div>
-
-        <!-- 獎項5 -->
-        <div class="col" style="padding-bottom: 10px;">
-            <div class="award-card h-100">
-                <div class="award-year">2021</div>
-                <div class="award-title">亞洲某某表演競賽 - 優勝</div>
-                <div class="award-desc">於馬來西亞舉辦的某某競賽中，與多國團隊交流並榮獲優勝。</div>
-            </div>
-        </div>
-
-        <!-- 獎項6 -->
-        <div class="col" style="padding-bottom: 10px;">
-            <div class="award-card h-100">
-                <div class="award-year">2020</div>
-                <div class="award-title">某某盃錦標賽 - 亞軍</div>
-                <div class="award-desc">參與某某盃錦標賽，展現新世代的創意與活力，奪得亞軍。</div>
-            </div>
-        </div>
-
+    </div>
 </div>
 
+<!-- Footer -->
     <footer class="bg-dark text-white text-center py-3">
         <p class="mb-0">© 2025 台灣獅頭旺民俗技藝發展協會 | 保留所有權利</p>
     </footer>
